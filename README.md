@@ -1,27 +1,41 @@
-# 📄 Document Cropper (Python Script)
+# 📄 Document Auto Crop Tool (Python)
 
-A powerful yet user-friendly GUI-based document cropping tool built with Python. This tool is designed for ease of use and seamless image handling, with advanced features like drag & drop, copy-paste support, and integration with the Windows "Send To" context menu. ChatGPT assistance is built-in for guided help and smart suggestions.
+An intelligent GUI-based document cropping tool built with Python. This app uses OpenCV and a draggable point interface to detect and crop documents easily. It supports image loading via **drag-and-drop**, **copy-paste**, and even **Windows "Send To" context menu**. Perfect for scanning and saving document images efficiently!
+
+---
 
 ## ✨ Features
 
-- ✅ **Simple GUI Interface**  
-  Clean and intuitive interface for cropping documents quickly.
+- ✅ **Auto-detects document boundaries**
+- 🖱️ **Manual drag to adjust corner points**
+- 🖼️ **Supports multiple input methods**:
+  - Drag & drop images onto the canvas
+  - Copy-paste image (file path, URL, or raw clipboard)
+  - Load multiple images from file dialog
+  - Use Windows **"Send To"** integration
+- 🔁 **Multi-image queue** – Automatically proceeds to next image after saving
+- 💬 **Clipboard URL/image recognition** – Paste images from web or system clipboard
+- 💡 **Easy GUI with preview support**
+- 🧠 **Built-in document contour detection using OpenCV**
+- 💾 **Save as cropped version or overwrite original image**
 
-- 🖼️ **Multiple Image Import Methods**
-  - **Copy-Paste Support** – Just copy an image and paste it directly into the cropper canvas.
-  - **Drag & Drop** – Drag image files from any folder into the app.
-  - **Send To Integration** – Add the script to your Windows "Send To" menu for 1-click access.
+---
 
-- 🔍 **Preview & Crop**
-  - Resize, move, and adjust selection on the canvas before cropping.
-  - Cropped image preview shown instantly.
+## 🖥️ GUI Overview
 
-- 💾 **Save with Ease**
-  - One-click save of cropped images to your desired folder.
+- Canvas displays auto-detected document and allows manual drag of corners.
+- Buttons:
+  - **Load Images**: Select one or more images to add to processing queue.
+  - **Clear Canvas**: Clears everything and resets.
+  - **Preview Crop**: Opens a CV window to show cropped output.
+  - **Crop and Save**: Saves the cropped image.
+- **Checkbox**: Decide whether to overwrite the original file or save a new cropped copy.
+
+---
 
 ## 🛠️ Requirements
 
-- Python 3.7+
-- Required packages:
-  ```bash
-  pip install tkinter pillow pyperclip
+Install the required Python packages:
+
+```bash
+pip install opencv-python pillow tkinterdnd2
