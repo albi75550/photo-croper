@@ -24,4 +24,4 @@ A powerful yet user-friendly GUI-based document cropping tool built with Python.
 - Python 3.7+
 - Required packages:
   ```bash
-  # pip install tkinter pillow pyperclip
+  pip install tkinter pillow pyperclip
