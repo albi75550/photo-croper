@@ -32,6 +32,10 @@ An intelligent GUI-based document cropping tool built with Python. This app uses
 - **Checkbox**: Decide whether to overwrite the original file or save a new cropped copy.
 
 ---
+contact me if you got any problem
+email: mu24987@gmail.com
+
+i will responde you as soon as possible
 
 ## 🛠️ Requirements
 
